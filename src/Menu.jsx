@@ -22,7 +22,7 @@ const data = [
   },
 ]
 
-function Menu({ dashcount }) {
+function Menu() {
   const ref = useRef(0)
   const inputRef = useRef(null)
   const [value, setValue] = useState({})
@@ -63,7 +63,7 @@ function Menu({ dashcount }) {
 
   return (
     <div>
-      <p onClick={() => handleClick()}>Hello all {dashcount}</p>
+      <p onClick={() => handleClick()}>Hello all</p>
       <Card count={count} person={person} text={text} setText={setText} />
       <CommonComponent
         img={
